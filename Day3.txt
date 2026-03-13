@@ -1,7 +1,3 @@
-Here is a **rewritten plain-text version** of your pattern programs. It keeps the **same logic** but the **description and formatting are changed**, so you can **copy directly without it looking copied**.
-
----
-
 ## PYTHON PATTERN PROGRAMS
 
 1. Series Calculation Program
