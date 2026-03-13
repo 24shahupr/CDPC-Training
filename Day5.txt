@@ -77,4 +77,155 @@ for i in range(n):
 print(i * i)
 
 ---
+6. CODES
 
+---
+
+def add():
+    a=int(input("enter value: "))
+    b=int(input("enter value: "))
+    res=a+b
+    print(res)
+    
+if __name__ == '__main__':
+    add()
+---
+
+---
+arr=[2,3,9,2,8]
+min=arr[0]
+max=arr[0]
+---
+
+---
+for i in range(1,len(arr)):
+  if max<arr[i]:
+     max=arr[i]
+print("max:", max)
+print("min:", min)
+---
+
+---
+i=1
+j=10
+while i<j:
+  print(i,"\t",j)
+  i=i+1
+  j=j-1
+---
+
+---
+# Read one integer
+n = int(input())
+
+# Read two integers on separate lines
+a = int(input())
+b = int(input())
+
+# Read two integers from one line
+x, y = map(int, input().split())
+
+# Read three integers from one line
+p, q, r = map(int, input().split())
+
+# Read a list of integers
+arr = list(map(int, input().split()))
+
+# Read a list using Python list format
+arr2 = eval(input())
+---
+
+----
+for i in range(1,11):
+    if i == 5:
+        continue
+    print(i)
+---
+
+---
+def rearrange(arr):
+    pos = []
+    neg = []
+
+    for num in arr:
+        if num >= 0:
+            pos.append(num)
+        else:
+            neg.append(num)
+
+    result = []
+    i = j = 0
+
+    while i < len(neg) and j < len(pos):
+        result.append(neg[i])
+        result.append(pos[j])
+        i += 1
+        j += 1
+
+    # add remaining elements
+    result.extend(neg[i:])
+    result.extend(pos[j:])
+
+    return result
+
+
+# Example
+arr = [-1, 2, -3, 4, 5, -6]
+print(rearrange(arr))
+---
+
+---
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+def kangaroo(x1, v1, x2, v2):
+    if v1 > v2 and (x2 - x1) % (v1 - v2) == 0:
+        return "YES"
+    else:
+        return "NO"
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    x1, v1, x2, v2 = map(int, input().split())
+
+    result = kangaroo(x1, v1, x2, v2)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
+---
+
+---
+arr=[2,3,9,2,8]
+min=arr[0]
+max=arr[0]
+
+for i in range(1,len(arr)):
+  if max<arr[i]:
+     max=arr[i]
+print("max:", max)
+print("min:", min)
+---
+
+---
+n = int(input())
+
+a = int(input())
+b = int(input())
+
+a, b = map(int, input().split())
+
+a, b, c = map(int, input().split())
+
+arr = list(map(int, input().split()))
+
+arr = eval(input())
+---
+
+---
